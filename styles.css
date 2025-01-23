@@ -22,14 +22,31 @@ body {
   border-radius: 2rem;
   background-color: #1c1c1c;
 }
-#display {
-  text-align: right;
+.all-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 1.5rem;
   outline: 1px solid #777777;
   border: none;
   border-radius: 0.5rem;
-  width: 100%;
   padding: 0.5rem 1rem;
+}
+#display-result {
+  outline: none;
+  text-align: right;
+  width: 100%;
+  font-size: 2rem;
+  background-color: #1c1c1c;
+  color: #cacaca;
+  border: none;
+}
+#display {
+  outline: none;
+  border: none;
+  text-align: right;
+  width: 100%;
   font-size: 4rem;
   background-color: #1c1c1c;
   color: #fff;
