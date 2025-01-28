@@ -12,10 +12,9 @@ buttons.forEach(function (button) {
       currentInput = '';
       display.value = '';
       displayResult.value = '';
-    } else if (button.value === '%') {
-      const result = eval(currentInput / 100);
-      display.value = result;
-      currentInput = result;
+    } else if (button.value === '←') {
+      display.value = display.value.slice(0, -1);
+      currentInput = display.value;
     } else if (button.value === '.') {
       const lastNumber = String(currentInput)
         .split(/[\+\-\*\/]/)
